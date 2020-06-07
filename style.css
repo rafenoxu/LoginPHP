@@ -1,0 +1,160 @@
+:root {
+    --form_bg: #ffffff;
+    --input_bg: #e5e5e5;
+    --input_hover: #eaeaea;
+    --submit_bg: #1fcc44;
+    --submit_hover: #40e263;
+    --icon_color: #6b6b6b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* make the body full height */
+    height: 100vh;
+    /* set custom font */
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+#form_wrapper {
+    width: 800px;
+    height: 500px;
+    /* center */
+    margin: auto;
+    background-color: var(--form_bg);
+    border-radius: 50px;
+    /* grid container */
+    display: grid;
+    /* two columns of same width */
+    grid-template-columns: 1fr 1fr;
+    /* small gap between columns */
+    gap: 5vw;
+    padding: 5vh 15px;
+}
+
+#form_left {
+    /* center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_left img {
+    width: 200px;
+    height: 200px;
+}
+
+#form_right {
+    display: grid;
+    /* single column layout */
+    grid-template-columns: 1fr;
+    /* gap between elements */
+    gap: 20px;
+    padding: 10% 5%;
+}
+
+.input_container {
+    background-color: var(--input_bg);
+    /* vertically align icon and text inside the div */
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.input_container:hover {
+    background-color: var(--input_hover);
+}
+
+.input_container,
+#input_submit {
+    height: 60px;
+    /* more round borders */
+    border-radius: 30px;
+    width: 100%;
+}
+
+.input_field {
+    color: var(--icon_color);
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.input_field:hover,
+.input_field:focus {
+    outline: none;
+}
+
+#input_submit {
+    background-color: var(--submit_bg);
+    padding-left: 0;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+#input_submit:hover {
+    background-color: var(--submit_hover);
+    /* color transition */
+    transition: background-color, 1s;
+    cursor: pointer;
+}
+
+h1,
+span {
+    text-align: center;
+}
+
+#create_account {
+    display: block;
+    position: relative;
+    top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--submit_bg);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--submit_hover);
+}
+
+i {
+    color: var(--icon_color);
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 1.3em;
+    margin-right: 0.3em;
+    border-radius: 10px;
+}
+  
+.nav-link:hover {
+    color: white !important;
+    background-color: var(--submit_hover);
+}
+  
+#logo img {
+    width: 80px;
+    height: 80px;
+}
+  
+#navigation {
+    background-color: var(--input_bg);
+    border-radius: 15px;
+}
+
+p {
+    text-indent: 2em;
+}
